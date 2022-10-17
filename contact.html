@@ -9,11 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&family=Roboto:wght@400;700&display=swap"rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e4e56c8b42.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <!-- Header/Nav Section --> 
-    <header>
+    <header class="headerContact">
         <nav>
             <ul class="mainMenu">
                 <li><a href="./index.html">Home</a></li>
@@ -24,39 +25,44 @@
         </nav>
         <h1>Get In Touch</h1>
     </header>
-</body>
 
 <!-- Main Section -->
-    <main>
+    <main class="contactMain">
+<!-- Contact Section -->
+        <section class="wrapper">
+            <div class="contact">
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>                
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="contactInfo">
+                <p>info@email.com</p>
+                <p>123 - 456 - 7890 
+                <br>123 Queen Street West, Unit 10
+                <br>Toronto, Ontario
+                <br>M5V2D5</p>
+            </div>
 
 <!-- Contact Form Section -->
-        <form class="formContact" action="">
-            <label for="name"></label>
-            <input type="text" placeholder="Name" id="name" name="name">
-            <label for="email"></label>
-            <input type="email" placeholder="Email address" id="email" name="email">
-            <label for="comment"></label>
-            <textarea name="comment" placeholder="Comment" id="comment" cols="30" rows="10"></textarea>
-            <button type="submit">Submit</button>
-        </form>
-
-<!-- Contact Section -->
-        <section class="contact">
-            <div class="icons">
-                <i></i>
-                <i></i>
-                <i></i>
-                <i></i>
+            <div class="contactForm">
+                <form class="formContact" action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="name" required="true">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" class="email" required="true">
+                    <label for="message"></label>
+                    <textarea name="message" id="message" placeholder="Message" class="message" cols="60" rows="10" required="true"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
-            <p>info@email.com</p>
-            <p>123 - 456 - 7890
-            123 Queen Street West, Unit 10
-            Toronto, Ontario
-            M5V2D5</p>
+            </div>
         </section>
     </main>
-    
+
     <footer>
         <p>Copyright &copy; 2019 HackerYou</p> 
     </footer>
+</body>
 </html>

@@ -76,3 +76,39 @@ footer {
         margin: 0;
     }
 }
+
+// CONTACT US MAIN
+.contactMain {
+    background: variables.$iceBlue;
+    padding: 50px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.contactInfo {
+    width: 30%;
+    line-height: 30px;
+}
+
+.contactForm {
+    width: 70%;
+    justify-content: flex-end;
+    background-color: variables.$twilightBlue;
+    color: variables.$white;
+    font-family: variables.$bodyFont;
+    box-shadow: 0px 30px 30px 0px solid variables.$dandelion;
+
+    .message {
+        border: solid 1px variables.$dandelion;
+        background-color: variables.$twilightBlue;
+        color: variables.$white;
+    }
+}
+
+.icons {
+    color: variables.$twilightBlue;
+    display: flex;
+}

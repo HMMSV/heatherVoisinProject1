@@ -1,5 +1,7 @@
 @use "./variables";
 
+// HOME HEADER
+
 .headerHome {
         background-image: url(../Boat-Ride-Adventures-final-assets/home-header.jpg);
         background-repeat: no-repeat;
@@ -8,10 +10,11 @@
     h1 {
         color: variables.$dandelion;
     }
+}
 
 nav ul {
     display: flex;
-    padding: 50px;
+    padding: 30px 0px 0px 75px;
 }
 
 nav a {
@@ -19,7 +22,34 @@ nav a {
     flex-direction: row;
     padding: 20px;
 }
+
 a:hover {
-    border-bottom: variables.$dandelion;
+    border-bottom: solid variables.$dandelion;
 }
+
+//CONTACT US HEADER
+
+.headerContact {
+    background-image: url(../Boat-Ride-Adventures-final-assets/contact-header.jpg);
+    background-size: cover;
+}
+
+.headerContact h1 {
+    color: variables.$white;
+    padding: 20px 0px 200px 50px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+}
+
+
+// BLOG HEADER
+
+.headerBlog {
+    background-image: url(../Boat-Ride-Adventures-final-assets/blog-header.jpg);
+    background-size: cover;
+
+    h1 {
+        color: variables.$white;
+        padding: 50px;
+    }
 }
