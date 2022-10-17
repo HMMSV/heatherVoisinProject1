@@ -9,7 +9,7 @@
 //Roboto, Bold
 
 html {
-    font-size: 125%;
+    font-size: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -18,11 +18,11 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 99.8px;
 }
 
@@ -32,9 +32,10 @@ h3 {
 
 h3, h4 {
     line-height: 58px;
+    font-size: 1.5rem;
 }
 
-h4 {
+h5 {
     letter-spacing: 0.8px;
 }
 
@@ -60,6 +61,7 @@ button {
     background-color: variables.$dandelion;
     color: variables.$twilightBlue;
     font-family: variables.$headingFont;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 41.6px;
+    text-transform: uppercase;
 }

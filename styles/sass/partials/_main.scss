@@ -1,5 +1,78 @@
 @use "./variables";
 
+.headerImgContainer {
+    position: relative;
+    bottom: 100px;
+    width: fit-content;
+    height: auto;
+}
+
+.blogPosts {
+    background-color: variables.$iceBlue;
+}
+
+.blogGallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h4 {
+    color: variables.$twilightBlue;
+    margin: 0;
+}
+
+.vacation {
+    text-align: center;
+    background-color: variables.$iceBlue;
+
+    .textContainer {
+        padding: 50px;
+    }
+}
+
 .vacation img {
     width: 100%;
+}
+
+.contest {
+    display: flex;
+    background-color: variables.$iceBlue;
+    margin: 0;
+
+    img {
+        margin: 40px 40px 40px 60px;
+        width: 65%;
+        box-shadow: 0px 50px 50px 0px 0 variables.$dandelion;
+    }
+
+    .textContainer {
+        padding: 40px;
+        width: 50%;
+    }
+}
+
+.galleryHome {
+    display: flex;
+    background-color: variables.$twilightBlue;
+    padding: 50px 0px 50px 50px;
+}
+
+.galleryHome li {
+    width: calc((100% / 3) - 50px);
+    margin: 20px 10px;
+}
+
+button {
+    border: none;
+    padding: 5px 20px;
+}
+
+footer {
+    background-color: variables.$dandelion;
+    text-align: center;
+
+    p {
+        margin: 0;
+    }
 }
