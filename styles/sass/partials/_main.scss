@@ -1,25 +1,144 @@
 @use "./variables";
 
+.homeMain {
+   //position: relative;
+}
+
 .headerImgContainer {
-    position: relative;
-    bottom: 100px;
-    width: fit-content;
-    height: auto;
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    width: 625px;
+
+    img {
+        //height: 65vh;
+    }
+}
+
+h2 {
+    color: variables.$twilightBlue;
 }
 
 .blogPosts {
     background-color: variables.$iceBlue;
 }
 
+
 .blogGallery {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+
+    li {
+        //padding: 45px;
+        //margin: 50px 25px 25px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    //h2::before {
+    //    content: url(../Boat-Ride-Adventures-final-assets/twitter.svg);
+    //}
+
+    p {
+        margin: 0;
+        padding: 0 0 50px 0;
+    }
+}
+
+.blogOne, .blogTwo,  {
+    padding: 200px 0px 20px 0px
+}
+
+.blogThree .blogFour {
+    padding: 50px;
+}
+
+.fa-solid {
+    background-color: variables.$dandelion;
+    color: variables.$twilightBlue;
+}
+
+.programs, .locations {
+    display: flex;
+    justify-content: center;
+    background-color: variables.$twilightBlue;
+    p {
+    color: variables.$white;
+    }
+}
+
+.programsTextContainer, .locationsTextContainer {
+    width: 60%;
+    text-align: center;
+}
+
+.programsImgContainer, .locationsImgContainer {
+    width: 40%;
+}
+
+.programsImgContainer {
+    position: relative;
+    top: -10;
+}
+
+// .info {
+//     background-color: variables.$twilightBlue;
+//     position: absolute;
+
+//     p {
+//         color: variables.$white;
+//     }
+
+//     img {
+//         height: 30vh;
+//     }
+// }
+
+// .programsImg {
+//     width: 40%;
+//     position: relative;
+//     top: -500;
+//     left: 0;
+//     box-shadow: 10px 10px 0 variables.$dandelion;
+// }
+
+// .programs {
+//     position: relative;
+//     width: 60%;
+//     left: 100;
+// }
+
+// .locationsImg {
+//     width: 40%;
+//     left: 0;
+//     box-shadow: -10px 10px 0 variables.$dandelion;
+// }
+
+
+// .locations {
+//     h3 {
+//         margin-top: 0;
+//     }
+// }
+
+h3 {
+    color: variables.$white;
 }
 
 h4 {
     color: variables.$twilightBlue;
     margin: 0;
+    font-weight: 400;
 }
 
 .vacation {
@@ -59,13 +178,13 @@ h4 {
 }
 
 .galleryHome li {
-    width: calc((100% / 3) - 50px);
+    width: calc((100% / 3) - 60px);
     margin: 20px 10px;
 }
 
 button {
     border: none;
-    padding: 5px 20px;
+    padding: 0px 10px;
 }
 
 footer {
@@ -100,15 +219,30 @@ footer {
     color: variables.$white;
     font-family: variables.$bodyFont;
     box-shadow: 0px 30px 30px 0px solid variables.$dandelion;
+    text-align: center;
+
+    .name, .email {
+        border-bottom: solid 1px variables.$dandelion;
+        background-color: variables.$twilightBlue;
+        color: variables.$white;
+    }
 
     .message {
         border: solid 1px variables.$dandelion;
         background-color: variables.$twilightBlue;
         color: variables.$white;
     }
+
+    textarea {
+        margin: 50px;
+    }
 }
 
-.icons {
+input[type=text] {
+    
+}
+
+.iconsContact {
     color: variables.$twilightBlue;
     display: flex;
 }
