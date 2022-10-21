@@ -26,33 +26,40 @@
     </header>
 
 <!-- Main Section -->
-    <main>
+    <main class="mainBlog">
+
 
 <!-- Blog Post -->
         <section class="aboutBlog">
-            <article>
-                <img src="./Boat-Ride-Adventures-final-assets/blog-post-image.jpg" alt="Sailboat tied up, floating in the water">
-                <h2>Next Destination</h2>
-                <p>Monday October 30, 2019 by Sulaire</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, repudiandae totam ipsam eum doloribus et qui magnam dolore ratione velit est, ullam ea tempora quam ducimus tempore incidunt in eligendi.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa vero nostrum incidunt in ratione voluptate numquam iste itaque obcaecati, quisquam sapiente fugiat vitae cupiditate eum, ducimus, distinctio maiores quidem nobis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, sit! Placeat, sequi? Labore, dignissimos perspiciatis, autem dolore voluptates nulla commodi, natus maiores ab animi reprehenderit asperiores eius doloremque cum minus.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam eius ab minus autem tempora repudiandae doloribus amet voluptate nisi consequatur quaerat omnis dolor nulla sit perferendis numquam, eos rerum beatae?</p>
-            </article>
 
-<!-- Mission Section -->
+            <!-- Mission Section -->
             <div class="mission">
-                <img src="./Boat-Ride-Adventures-final-assets/blog-side-image.jpg" alt="The front of a large sailboat at sunset">
-                <h3>Our Mission</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis beatae sint alias corporis ullam quidem, magni, quod molestias iusto exercitationem voluptatum maxime blanditiis velit consectetur maiores, debitis iste deleniti accusamus.</p>
-                <h3>Recent Posts</h3>
-                <ul>
-                    <li>Donec facilisis torot ut</li>
-                    <li>Augue facina at viverra</li>
-                    <li>Semper sed sapien metus</li>
-                    <li>Scelerisque nec phareta id</li>
-                </ul>
+                    <img src="./Boat-Ride-Adventures-final-assets/blog-side-image.jpg" alt="The front of a large sailboat at sunset">
+                <div class="missionTextContainer">
+                    <h3>Our Mission</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis beatae sint alias. Find out more.</p>
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li>Donec facilisis torot ut</li>
+                        <li>Augue facina at viverra</li>
+                        <li>Semper sed sapien metus</li>
+                        <li>Scelerisque nec phareta id</li>
+                    </ul>
+                </div>
             </div>
+            <aside>
+                <div class="articleImgContainer">
+                    <img src="./Boat-Ride-Adventures-final-assets/blog-post-image.jpg" alt="Sailboat tied up, floating in the water">
+                </div>
+                <div class="articleTextContainer">
+                    <h2>Next Destination</h2>
+                    <p>Monday October 30, 2019 by Sulaire</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, repudiandae totam ipsam eum doloribus et qui magnam dolore ratione velit est, ullam ea tempora quam ducimus tempore incidunt in eligendi.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa vero nostrum incidunt in ratione voluptate numquam iste itaque obcaecati, quisquam sapiente fugiat vitae cupiditate eum, ducimus, distinctio maiores quidem nobis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, sit! Placeat, sequi? Labore, dignissimos perspiciatis, autem dolore voluptates nulla commodi, natus maiores ab animi reprehenderit asperiores eius doloremque cum minus.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam eius ab minus autem tempora repudiandae doloribus amet voluptate nisi consequatur quaerat omnis dolor nulla sit perferendis numquam, eos rerum beatae?</p>
+                </div>
+            </aside>
         </section>
 
 <!-- Comments Section -->
@@ -71,14 +78,14 @@
         </section>
 
 <!-- Form Section -->
-        <form action="">
+        <form action="" class="blogForm">
             <label for="name"></label>
-            <input type="text" placeholder="Name" id="name" name="name">
+            <input type="text" placeholder="Name" class="name" id="name" name="name">
             <label for="email"></label>
-            <input type="email" placeholder="Email address" id="email" name="email">
+            <input type="email" placeholder="Email address" class="email" id="email" name="email">
             <label for="comment"></label>
             <textarea name="comment" placeholder="Comment" id="comment" cols="30" rows="10"></textarea>
-            <button type="submit">Post Comment</button>        
+            <button class="blogButton" type="submit">Post Comment</button>        
         </form>
 </main>
 

@@ -25,7 +25,8 @@ nav a {
     padding: 20px;
 }
 
-a:hover {
+a:hover,
+a:focus {
     border-bottom: solid variables.$dandelion;
 }
 
@@ -52,6 +53,8 @@ a:hover {
 
     h1 {
         color: variables.$white;
-        padding: 50px;
+        padding: 10px 80px 200px;
+        margin-bottom: 0;
+        font-weight: 400;
     }
 }

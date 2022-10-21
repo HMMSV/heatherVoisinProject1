@@ -35,7 +35,8 @@ nav a {
   padding: 20px;
 }
 
-a:hover {
+a:hover,
+a:focus {
   border-bottom: solid #FDD908;
 }
 
@@ -57,7 +58,9 @@ a:hover {
 }
 .headerBlog h1 {
   color: #FFFFFF;
-  padding: 50px;
+  padding: 10px 80px 200px;
+  margin-bottom: 0;
+  font-weight: 400;
 }
 
 .headerImgContainer {
@@ -134,9 +137,23 @@ h2 {
   color: #FFFFFF;
 }
 
+.programs img {
+  -webkit-box-shadow: 10px 10px 0 #FDD908;
+          box-shadow: 10px 10px 0 #FDD908;
+  position: relative;
+  top: -30px;
+}
+
 .programsTextContainer, .locationsTextContainer {
   width: 60%;
-  text-align: center;
+}
+
+.programsTextContainer, .locationsTextContainer {
+  padding: 0px 60px;
+}
+
+.locationsTextContainer {
+  text-align: right;
 }
 
 .programsImgContainer, .locationsImgContainer {
@@ -146,6 +163,13 @@ h2 {
 .programsImgContainer {
   position: relative;
   top: -10;
+}
+
+.locationsImg {
+  -webkit-box-shadow: -10px 10px 0 #FDD908;
+          box-shadow: -10px 10px 0 #FDD908;
+  position: relative;
+  bottom: -20;
 }
 
 h3 {
@@ -163,7 +187,10 @@ h4 {
   background-color: #EAFEFC;
 }
 .vacation .textContainer {
-  padding: 50px;
+  padding: 100px;
+}
+.vacation .textContainer p {
+  padding: 0 50px 20px 50px;
 }
 
 .vacation img {
@@ -236,15 +263,9 @@ footer p {
 
 .contactForm {
   width: 70%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   background-color: #0D457F;
   color: #FFFFFF;
   font-family: "Roboto";
-  -webkit-box-shadow: 0px 30px 30px 0px solid #FDD908;
-          box-shadow: 0px 30px 30px 0px solid #FDD908;
-  text-align: center;
 }
 .contactForm .name, .contactForm .email {
   border-bottom: solid 1px #FDD908;
@@ -265,6 +286,121 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.mainBlog {
+  background-color: #EAFEFC;
+}
+
+.aboutBlog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mission img {
+  width: 60%;
+  margin-top: 60px;
+  -webkit-box-shadow: 10px 10px 0 #0D457F;
+          box-shadow: 10px 10px 0 #0D457F;
+}
+
+.missionTextContainer {
+  background-color: #0D457F;
+  width: 60%;
+  padding: 20px;
+  margin-left: 10px;
+}
+.missionTextContainer h3 {
+  color: #FDD908;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+}
+.missionTextContainer p {
+  color: #FFFFFF;
+}
+.missionTextContainer li {
+  color: #FFFFFF;
+  list-style-type: disc;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 25px;
+  margin: 0px 10px;
+}
+
+aside {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+aside img {
+  position: absolute;
+  top: 300px;
+  right: 0;
+  width: 55%;
+  -webkit-box-shadow: -10px 10px 0 #FDD908;
+          box-shadow: -10px 10px 0 #FDD908;
+}
+
+.articleTextContainer {
+  border: solid 3px #FDD908;
+  border-top: none;
+  border-right: none;
+  margin: 300px 0px 0px 230px;
+  padding: 80px;
+}
+.articleTextContainer p {
+  font-size: 0.7rem;
+}
+
+.comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 50px 50px 600px;
+}
+.comments h5 {
+  color: #0D457F;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.comments .commentsDate {
+  color: #0D457F;
+  font-weight: 900;
+}
+
+.blogForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 40%;
+  margin-left: 600px;
+  padding-bottom: 50px;
+}
+.blogForm .name, .blogForm .email {
+  border: none;
+  border-bottom: solid 1px #FDD908;
+  background-color: #EAFEFC;
+  padding: 20px 0px;
+}
+.blogForm textarea {
+  background-color: #EAFEFC;
+  border: solid 1px #FDD908;
+}
+.blogForm .blogButton {
+  background-color: #0D457F;
+  color: #FDD908;
 }
 
 html {
@@ -510,7 +646,7 @@ html {
   font-size: 100%;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: "IM Fell English";
   text-transform: uppercase;
 }
