@@ -30,6 +30,7 @@ h2 {
     flex-wrap: wrap;
     text-align: center;
     width: 100%;
+    padding: 200px 50px 100px;
 
     li {
         //padding: 45px;
@@ -42,21 +43,17 @@ h2 {
 
     h2 {
         margin: 0;
-        padding: 0;
+        padding: 10px;
+        font-weight: 400;
     }
-
-    //h2::before {
-    //    content: url(../Boat-Ride-Adventures-final-assets/twitter.svg);
-    //}
 
     p {
         margin: 0;
-        padding: 0 0 50px 0;
     }
 }
 
 .blogOne, .blogTwo,  {
-    padding: 200px 0px 20px 0px
+    //padding-top: 200px;
 }
 
 .blogThree .blogFour {
@@ -66,11 +63,15 @@ h2 {
 .fa-solid {
     background-color: variables.$dandelion;
     color: variables.$twilightBlue;
+    padding: 10px;
+    border-radius: 25px;
+    position: absolute;
+    left: 50;
 }
 
 .programs, .locations {
     display: flex;
-    justify-content: center;
+    //justify-content: center;
     background-color: variables.$twilightBlue;
     p {
     color: variables.$white;
@@ -85,11 +86,20 @@ h2 {
 
 .programsTextContainer, .locationsTextContainer {
     width: 60%;
+    padding: 10px 100px;
+
+    p, h3 {
+        margin: 0;
+    }
+    
+    button {
+        margin: 20px 0px;
+    }
 
 }
 
-.programsTextContainer, .locationsTextContainer {
-    padding: 0px 60px;
+.programsTextContainer {
+    padding-top: 20px;
 }
 
 .locationsTextContainer {
@@ -100,15 +110,11 @@ h2 {
     width: 40%;
 }
 
-.programsImgContainer {
-    position: relative;
-    top: -10;
-}
 
-.locationsImg {
+.locations img {
     box-shadow: -10px 10px 0 variables.$dandelion;
     position: relative;
-    bottom: -20;
+    bottom: -100;
 }
 
 
@@ -235,37 +241,49 @@ footer {
 .contactInfo {
     width: 30%;
     line-height: 30px;
+    margin-top: 100px;
 }
 
 .contactForm {
     width: 70%;
-    //justify-content: flex-end;
     background-color: variables.$twilightBlue;
     color: variables.$white;
     font-family: variables.$bodyFont;
-    //box-shadow: 0px 30px 30px 0px solid variables.$dandelion;
+    box-shadow: 20px 20px 0 variables.$dandelion;
     //text-align: center;
 
     .name, .email {
-        border-bottom: solid 1px variables.$dandelion;
         background-color: variables.$twilightBlue;
         color: variables.$white;
+        margin: 50px;
+        border-style: none;
+        border-bottom: solid 1px variables.$dandelion;
+        padding: 10px;
     }
 
     .message {
         border: solid 1px variables.$dandelion;
         background-color: variables.$twilightBlue;
         color: variables.$white;
+        padding: 20px 0px 0px 20px;
     }
 
     textarea {
-        margin: 50px;
+        margin: 30px;
+    }
+
+    button {
+    margin: 30px;
+    padding: 0px 205px;    
     }
 }
 
-input[type=text] {
-
+.formContact {
+    position: relative;
+    top: -100;
+    right: 0;
 }
+
 
 .iconsContact {
     color: variables.$twilightBlue;

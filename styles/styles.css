@@ -1,6 +1,6 @@
 .wrapper {
   max-width: 1260px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -88,6 +88,7 @@ h2 {
       flex-wrap: wrap;
   text-align: center;
   width: 100%;
+  padding: 200px 50px 100px;
 }
 .blogGallery li {
   width: 40%;
@@ -104,15 +105,11 @@ h2 {
 }
 .blogGallery h2 {
   margin: 0;
-  padding: 0;
+  padding: 10px;
+  font-weight: 400;
 }
 .blogGallery p {
   margin: 0;
-  padding: 0 0 50px 0;
-}
-
-.blogOne, .blogTwo {
-  padding: 200px 0px 20px 0px;
 }
 
 .blogThree .blogFour {
@@ -122,15 +119,16 @@ h2 {
 .fa-solid {
   background-color: #FDD908;
   color: #0D457F;
+  padding: 10px;
+  border-radius: 25px;
+  position: absolute;
+  left: 50;
 }
 
 .programs, .locations {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-color: #0D457F;
 }
 .programs p, .locations p {
@@ -146,10 +144,17 @@ h2 {
 
 .programsTextContainer, .locationsTextContainer {
   width: 60%;
+  padding: 10px 100px;
+}
+.programsTextContainer p, .programsTextContainer h3, .locationsTextContainer p, .locationsTextContainer h3 {
+  margin: 0;
+}
+.programsTextContainer button, .locationsTextContainer button {
+  margin: 20px 0px;
 }
 
-.programsTextContainer, .locationsTextContainer {
-  padding: 0px 60px;
+.programsTextContainer {
+  padding-top: 20px;
 }
 
 .locationsTextContainer {
@@ -160,16 +165,11 @@ h2 {
   width: 40%;
 }
 
-.programsImgContainer {
-  position: relative;
-  top: -10;
-}
-
-.locationsImg {
+.locations img {
   -webkit-box-shadow: -10px 10px 0 #FDD908;
           box-shadow: -10px 10px 0 #FDD908;
   position: relative;
-  bottom: -20;
+  bottom: -100;
 }
 
 h3 {
@@ -259,6 +259,7 @@ footer p {
 .contactInfo {
   width: 30%;
   line-height: 30px;
+  margin-top: 100px;
 }
 
 .contactForm {
@@ -266,19 +267,35 @@ footer p {
   background-color: #0D457F;
   color: #FFFFFF;
   font-family: "Roboto";
+  -webkit-box-shadow: 20px 20px 0 #FDD908;
+          box-shadow: 20px 20px 0 #FDD908;
 }
 .contactForm .name, .contactForm .email {
-  border-bottom: solid 1px #FDD908;
   background-color: #0D457F;
   color: #FFFFFF;
+  margin: 50px;
+  border-style: none;
+  border-bottom: solid 1px #FDD908;
+  padding: 10px;
 }
 .contactForm .message {
   border: solid 1px #FDD908;
   background-color: #0D457F;
   color: #FFFFFF;
+  padding: 20px 0px 0px 20px;
 }
 .contactForm textarea {
-  margin: 50px;
+  margin: 30px;
+}
+.contactForm button {
+  margin: 30px;
+  padding: 0px 205px;
+}
+
+.formContact {
+  position: relative;
+  top: -100;
+  right: 0;
 }
 
 .iconsContact {
