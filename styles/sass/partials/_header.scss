@@ -30,6 +30,15 @@ a:focus {
     border-bottom: solid variables.$dandelion;
 }
 
+.fa-bars {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 3rem;
+    visibility: hidden;
+    color: variables.$white;
+}
+
 //CONTACT US HEADER
 
 .headerContact {

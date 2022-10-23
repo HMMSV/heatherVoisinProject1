@@ -4,15 +4,11 @@
 
 @media (max-width: 1100px) {
 	
-	.homeMain {
-		img {
-			position: absolute;
-			top: 200;
 
-		}
-		
-	}
+	
+
 }
+
 
 //blog styling
 
@@ -28,4 +24,20 @@
 
 // MOBILE
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+	h1 {
+			margin-top: 0;
+			padding-top: 0;
+		}
+
+	i.fa-bars {
+			visibility: visible;
+		}
+	
+
+	
+	.mainMenu {
+			display: none;
+	}
+}

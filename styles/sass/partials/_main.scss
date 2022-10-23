@@ -48,9 +48,7 @@ h2 {
     }
 }
 
-.blogOne, .blogTwo,  {
-    //padding-top: 200px;
-}
+
 
 .blogThree .blogFour {
     padding: 50px;
@@ -238,9 +236,6 @@ footer {
     }
 }
 
-.formContact {
-    //padding: 0px 300px 100px 100px;
-}
 
 
 .iconsContact {
@@ -271,7 +266,7 @@ footer {
 .mission {
 
     img {
-        width: 60%;
+        width: 80%;
         margin-top: 60px;
         box-shadow: 10px 10px 0 variables.$twilightBlue;
     }
@@ -279,7 +274,7 @@ footer {
 
 .missionTextContainer {
     background-color: variables.$twilightBlue;
-    width: 60%;
+    width: 80%;
     padding: 20px;
     margin-left: 10px;
 
