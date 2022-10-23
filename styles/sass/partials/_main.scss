@@ -1,8 +1,6 @@
 @use "./variables";
 
-.homeMain {
-   //position: relative;
-}
+
 
 .headerImgContainer {
     position: absolute;
@@ -10,9 +8,7 @@
     right: 0px;
     width: 625px;
 
-    img {
-        //height: 65vh;
-    }
+
 }
 
 h2 {
@@ -118,46 +114,6 @@ h2 {
 }
 
 
-// .info {
-//     background-color: variables.$twilightBlue;
-//     position: absolute;
-
-//     p {
-//         color: variables.$white;
-//     }
-
-//     img {
-//         height: 30vh;
-//     }
-// }
-
-// .programsImg {
-//     width: 40%;
-//     position: relative;
-//     top: -500;
-//     left: 0;
-//     box-shadow: 10px 10px 0 variables.$dandelion;
-// }
-
-// .programs {
-//     position: relative;
-//     width: 60%;
-//     left: 100;
-// }
-
-// .locationsImg {
-//     width: 40%;
-//     left: 0;
-//     box-shadow: -10px 10px 0 variables.$dandelion;
-// }
-
-
-// .locations {
-//     h3 {
-//         margin-top: 0;
-//     }
-// }
-
 h3 {
     color: variables.$white;
 }
@@ -228,9 +184,10 @@ footer {
 }
 
 // CONTACT US MAIN
+
 .contactMain {
     background: variables.$iceBlue;
-    padding: 50px;
+    padding: 0px;
 }
 
 .contact {
@@ -240,36 +197,39 @@ footer {
 
 .contactInfo {
     width: 30%;
-    line-height: 30px;
-    margin-top: 100px;
+    margin: 20px 0px 0px 20px;
 }
 
 .contactForm {
-    width: 70%;
+    width: 50%;
+    padding-right: 20px;
+    margin-bottom: 50px;
     background-color: variables.$twilightBlue;
     color: variables.$white;
     font-family: variables.$bodyFont;
-    box-shadow: 20px 20px 0 variables.$dandelion;
-    //text-align: center;
+    box-shadow: 15px 15px 0 variables.$dandelion;
+ 
 
-    .name, .email {
+    input {
         background-color: variables.$twilightBlue;
         color: variables.$white;
-        margin: 50px;
+        margin: 50px 20px 20px 50px;
         border-style: none;
         border-bottom: solid 1px variables.$dandelion;
         padding: 10px;
     }
 
-    .message {
+    textarea {
         border: solid 1px variables.$dandelion;
         background-color: variables.$twilightBlue;
         color: variables.$white;
         padding: 20px 0px 0px 20px;
-    }
+        margin: 20px 20px 20px 50px;
 
-    textarea {
-        margin: 30px;
+            &::placeholder {
+                    color: variables.$white;
+                    line-height: 1.2rem;
+                }
     }
 
     button {
@@ -279,15 +239,22 @@ footer {
 }
 
 .formContact {
-    position: relative;
-    top: -100;
-    right: 0;
+    //padding: 0px 300px 100px 100px;
 }
 
 
 .iconsContact {
     color: variables.$twilightBlue;
     display: flex;
+    padding: 100px 20px 20px 20px ;
+
+    .fa-instagram {
+        padding: 0 15px;
+    }
+
+    .fa-twitter {
+        padding: 0 15px 0 0;
+    }
 }
 
 

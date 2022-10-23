@@ -47,7 +47,7 @@ a:focus {
 
 .headerContact h1 {
   color: #FFFFFF;
-  padding: 20px 0px 200px 50px;
+  padding: 20px 0px 200px 30px;
   margin-left: 50px;
   margin-bottom: 0px;
 }
@@ -69,6 +69,7 @@ a:focus {
   right: 0px;
   width: 625px;
 }
+
 h2 {
   color: #0D457F;
 }
@@ -243,7 +244,7 @@ footer p {
 
 .contactMain {
   background: #EAFEFC;
-  padding: 50px;
+  padding: 0px;
 }
 
 .contact {
@@ -258,44 +259,57 @@ footer p {
 
 .contactInfo {
   width: 30%;
-  line-height: 30px;
-  margin-top: 100px;
+  margin: 20px 0px 0px 20px;
 }
 
 .contactForm {
-  width: 70%;
+  width: 50%;
+  padding-right: 20px;
+  margin-bottom: 50px;
   background-color: #0D457F;
   color: #FFFFFF;
   font-family: "Roboto";
-  -webkit-box-shadow: 20px 20px 0 #FDD908;
-          box-shadow: 20px 20px 0 #FDD908;
+  -webkit-box-shadow: 15px 15px 0 #FDD908;
+          box-shadow: 15px 15px 0 #FDD908;
 }
-.contactForm .name, .contactForm .email {
+.contactForm input {
   background-color: #0D457F;
   color: #FFFFFF;
-  margin: 50px;
+  margin: 50px 20px 20px 50px;
   border-style: none;
   border-bottom: solid 1px #FDD908;
   padding: 10px;
 }
-.contactForm .message {
+.contactForm textarea {
   border: solid 1px #FDD908;
   background-color: #0D457F;
   color: #FFFFFF;
   padding: 20px 0px 0px 20px;
+  margin: 20px 20px 20px 50px;
 }
-.contactForm textarea {
-  margin: 30px;
+.contactForm textarea::-webkit-input-placeholder {
+  color: #FFFFFF;
+  line-height: 1.2rem;
+}
+.contactForm textarea::-moz-placeholder {
+  color: #FFFFFF;
+  line-height: 1.2rem;
+}
+.contactForm textarea:-ms-input-placeholder {
+  color: #FFFFFF;
+  line-height: 1.2rem;
+}
+.contactForm textarea::-ms-input-placeholder {
+  color: #FFFFFF;
+  line-height: 1.2rem;
+}
+.contactForm textarea::placeholder {
+  color: #FFFFFF;
+  line-height: 1.2rem;
 }
 .contactForm button {
   margin: 30px;
   padding: 0px 205px;
-}
-
-.formContact {
-  position: relative;
-  top: -100;
-  right: 0;
 }
 
 .iconsContact {
@@ -303,6 +317,13 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 100px 20px 20px 20px;
+}
+.iconsContact .fa-instagram {
+  padding: 0 15px;
+}
+.iconsContact .fa-twitter {
+  padding: 0 15px 0 0;
 }
 
 .mainBlog {
@@ -420,6 +441,12 @@ aside img {
   color: #FDD908;
 }
 
+@media (max-width: 1100px) {
+  .homeMain img {
+    position: absolute;
+    top: 200;
+  }
+}
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;

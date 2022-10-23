@@ -30,13 +30,13 @@
     <main class="contactMain">
 <!-- Contact Section -->
         <section class="wrapper">
+                <div class="iconsContact">
+                    <i class="fa-brands fa-facebook-f" alt="Facebook logo"></i>
+                    <i class="fa-brands fa-instagram" alt="Instagram logo"></i>
+                    <i class="fa-brands fa-twitter" alt="Twitter logo"></i>
+                    <i class="fa-brands fa-whatsapp" alt="Whatsapp logo"></i>
+                </div>
             <div class="contact">
-            <div class="iconsContact">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>                
-                <i class="fa-brands fa-whatsapp"></i>
-            </div>
             <div class="contactInfo">
                 <p>info@email.com</p>
                 <p>123 - 456 - 7890 
@@ -48,12 +48,12 @@
 <!-- Contact Form Section -->
             <div class="contactForm">
                 <form class="formContact" action="">
-                    <label for="name"></label>
-                    <input type="text" placeholder="Name" id="name" name="name" class="name" required="true">
-                    <label for="email"></label>
-                    <input type="email" placeholder="Email address" id="email" name="email" class="email" required="true">
-                    <label for="message"></label>
-                    <textarea name="message" placeholder="Message" id="message" class="message" cols="60" rows="10" required="true"></textarea>
+                    <label for="name" class="sr-only"></label>
+                    <input type="text" placeholder="Name" id="name" name="name" required="true">
+                    <label for="email" class="sr-only"></label>
+                    <input type="email" placeholder="Email address" id="email" name="email" required="true">
+                    <label for="message" class="sr-only"></label>
+                    <textarea name="message" placeholder="Message" id="message" cols="60" rows="10" required="true"></textarea>
                     <button type="submit">Submit</button>
                 </form>
             </div>
