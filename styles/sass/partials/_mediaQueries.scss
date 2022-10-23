@@ -1,43 +1,70 @@
 @use "./variables";
 
-// DESKTOP
 
-@media (max-width: 1100px) {
-	
+@media (max-width: 1085px) {
 
-	
+	.headerImgContainer {
+		margin: 350px 200px 0px 0px;
+	}
+
+	.blogPosts {
+		padding-top: 400px;
+	}
 
 }
 
 
-//blog styling
+@media (max-width: 768px) {
+
+.headerImgContainer {
+	display: none;
+}
+
+.blogPosts {
+	padding: 0;
+}
+
+.contest {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.programs,
+.locations {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
 
 
-        //locations/programs
-
-
-
-// TABLET
-
-@media (max-width: 768px) {}
-
-
-// MOBILE
+}
 
 @media (max-width: 480px) {
-
 	h1 {
-			margin-top: 0;
-			padding-top: 0;
+		margin-top: 0;
+		padding-top: 0;
 		}
 
 	i.fa-bars {
-			visibility: visible;
+		visibility: visible;
 		}
 	
+	
+
+
+	.programsTextContainer, .locationsTextContainer {
+		padding: 0;
+	}
 
 	
 	.mainMenu {
 			display: none;
+	}
+
+	.galleryHome {
+		flex: 50%;
+		max-width: 50%;
 	}
 }

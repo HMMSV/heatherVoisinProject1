@@ -223,6 +223,7 @@ footer {
         color: variables.$white;
         padding: 20px 0px 0px 20px;
         margin: 20px 20px 20px 50px;
+        resize: none;
 
             &::placeholder {
                     color: variables.$white;
@@ -358,15 +359,18 @@ aside {
         border-bottom: solid 1px variables.$dandelion;
         background-color: variables.$iceBlue;
         padding: 20px 0px;
+        width: 50%;
     }
 
     textarea {
         background-color: variables.$iceBlue;
         border: solid 1px variables.$dandelion;
+        resize: none;
     }
 
     .blogButton {
         background-color: variables.$twilightBlue;
         color: variables.$dandelion;
+        margin-top: 20px;
     }
 }
