@@ -59,8 +59,6 @@ h2 {
     color: variables.$twilightBlue;
     padding: 10px;
     border-radius: 25px;
-    position: absolute;
-    left: 50;
 }
 
 .programs, .locations {
@@ -147,7 +145,7 @@ h4 {
     img {
         margin: 40px 40px 40px 60px;
         width: 65%;
-        box-shadow: 0px 50px 50px 0px 0 variables.$dandelion;
+        box-shadow: -10px 10px 0 variables.$dandelion;
     }
 
     .textContainer {
@@ -195,35 +193,45 @@ footer {
 
 .contactInfo {
     width: 30%;
-    margin: 20px 0px 0px 20px;
+    margin: 0px 0px 175px 50px;
+
+    .infoEmail {
+        margin: 0 0 30px 0;
+    }
+    
+    p {
+        line-height: 20px;
+        margin-top: 20px;
+    }
 }
 
 .contactForm {
-    width: 50%;
-    padding-right: 20px;
-    margin-bottom: 50px;
+    width: 60%;
     background-color: variables.$twilightBlue;
     color: variables.$white;
     font-family: variables.$bodyFont;
     box-shadow: 15px 15px 0 variables.$dandelion;
+    position: absolute;
+    top: 300px;
+    right: 15px;
  
 
     input {
         background-color: variables.$twilightBlue;
         color: variables.$white;
-        margin: 50px 20px 20px 50px;
+        margin: 50px 20px 20px 80px;
         border-style: none;
         border-bottom: solid 1px variables.$dandelion;
-        padding: 10px;
+        padding: 0px 10px 10px 50px;
     }
 
     textarea {
         border: solid 1px variables.$dandelion;
         background-color: variables.$twilightBlue;
         color: variables.$white;
-        padding: 20px 0px 0px 20px;
-        margin: 20px 20px 20px 50px;
+        margin: 50px 20px 20px 80px;
         resize: none;
+        padding: 20px 0px 0px 20px;
 
             &::placeholder {
                     color: variables.$white;
@@ -232,17 +240,15 @@ footer {
     }
 
     button {
-    margin: 30px;
-    padding: 0px 205px;    
+    margin: 20px 20px 20px 80px;
+    padding: 0px 240px;    
     }
 }
-
-
 
 .iconsContact {
     color: variables.$twilightBlue;
     display: flex;
-    padding: 100px 20px 20px 20px ;
+    padding: 100px 20px 0px 50px ;
 
     .fa-instagram {
         padding: 0 15px;
@@ -267,7 +273,7 @@ footer {
 .mission {
 
     img {
-        width: 80%;
+        width: 30%;
         margin-top: 60px;
         box-shadow: 10px 10px 0 variables.$twilightBlue;
     }
@@ -275,7 +281,7 @@ footer {
 
 .missionTextContainer {
     background-color: variables.$twilightBlue;
-    width: 80%;
+    width: 30%;
     padding: 20px;
     margin-left: 10px;
 
@@ -302,25 +308,27 @@ footer {
 
 aside {
     flex-direction: column;
-    
-    img {
-        position: absolute;
-        top: 300px;
-        right: 0;
-        width: 55%;
+    width: 50%;
+    position: absolute;
+    top: 300px;
+    right: 0;
+}
+
+.articleImgContainer {
+        img {
+                
+        width: 100%;
         box-shadow: -10px 10px 0 variables.$dandelion;
-    }
+            }
 }
 
 .articleTextContainer {
+
+    padding: 100px;
     border: solid 3px variables.$dandelion;
     border-top: none;
     border-right: none;
-    margin: 300px 0px 0px 230px;
-    padding: 80px;
-    //padding: 100px;
-    //position: absolute;
-
+    margin-left: -10px;
 
     p {
         font-size: 0.7rem;
@@ -331,7 +339,7 @@ aside {
 .comments {
     display: flex;
     flex-direction: column;
-    margin: 0 50px 50px 600px;
+    margin: 300px 50px 50px 700px;
 
     h5 {
         color: variables.$twilightBlue;
@@ -350,22 +358,22 @@ aside {
     flex-direction: column;
     text-align: center;
     width: 40%;
-    margin-left: 600px;
+    margin-left: 700px;
     padding-bottom: 50px;
     
 
     .name, .email {
-        border: none;
-        border-bottom: solid 1px variables.$dandelion;
         background-color: variables.$iceBlue;
-        padding: 20px 0px;
+        border: none;
         width: 50%;
+        padding: 20px;
     }
 
     textarea {
         background-color: variables.$iceBlue;
-        border: solid 1px variables.$dandelion;
+        border: solid 2px variables.$dandelion;
         resize: none;
+        padding: 20px 0px 0px 20px;
     }
 
     .blogButton {
@@ -373,4 +381,10 @@ aside {
         color: variables.$dandelion;
         margin-top: 20px;
     }
+}
+
+.nameEmail {
+    display: flex;
+    border-bottom: solid 2px variables.$dandelion;
+    margin-bottom: 20px;
 }
