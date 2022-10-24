@@ -1,7 +1,24 @@
 @use "./variables";
 
+@media (max-width: 1200px) {
+
+//BLOG STYLING
+
+	.comments, {
+		align-items: center;
+		margin: 600px 100px 100px;
+	}
+
+	.blogForm {
+		align-items: center;
+		margin: 100px 50px 0px 200px;
+	}
+}
+
 
 @media (max-width: 1085px) {
+
+//HOME STYLING
 
 	.headerImgContainer {
 		margin: 350px 200px 0px 0px;
@@ -13,8 +30,18 @@
 
 }
 
+//BLOG STYLING
+
+
+
+//CONTACT STYLING
+
+
+
 
 @media (max-width: 768px) {
+
+//HOME STYLING
 
 .headerImgContainer {
 	display: none;
@@ -38,10 +65,26 @@
 	align-items: center;
 }
 
+.galleryHome {
+	flex-direction: column;
+	align-items: center;
+	width: 200%;
+	padding-left: 0px;
+	padding-right: 500px;
+}
+
+//BLOG STYLING
+
+aside {
+	margin-bottom: 500px;
+}
 
 }
 
 @media (max-width: 480px) {
+
+//HOME STYLING
+
 	h1 {
 		margin-top: 0;
 		padding-top: 0;
@@ -50,19 +93,23 @@
 	i.fa-bars {
 		visibility: visible;
 		}
-
+	
+	.blogGallery {
+		flex-direction: column;
+	}
 
 	.programsTextContainer, .locationsTextContainer {
 		padding: 0;
 	}
-
 	
 	.mainMenu {
-			display: none;
+		display: none;
 	}
 
-	.galleryHome {
-		flex: 50%;
-		max-width: 50%;
-	}
+//BLOG STYLING
+
+aside {
+	margin-bottom: 500px;
+}
+
 }
