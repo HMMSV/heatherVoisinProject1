@@ -320,7 +320,7 @@ aside {
 .comments {
     display: flex;
     flex-direction: column;
-    margin: 300px 50px 50px 600px;
+    margin: 350px 50px 50px 600px;
 
     .man, .woman {
         display: flex;
@@ -360,7 +360,6 @@ aside {
     width: 40%;
     margin-left: 600px;
     padding-bottom: 50px;
-    
 
     .name, .email {
         background-color: variables.$iceBlue;
