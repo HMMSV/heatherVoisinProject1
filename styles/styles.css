@@ -180,7 +180,7 @@ h2 {
   -webkit-box-shadow: -10px 10px 0 #FDD908;
           box-shadow: -10px 10px 0 #FDD908;
   position: relative;
-  bottom: -100;
+  bottom: -20px;
 }
 
 h3 {
@@ -214,16 +214,18 @@ h4 {
   display: flex;
   background-color: #EAFEFC;
   margin: 0;
+  padding: 50px 100px;
 }
 .contest img {
-  margin: 40px 40px 40px 60px;
-  width: 65%;
   -webkit-box-shadow: -10px 10px 0 #FDD908;
           box-shadow: -10px 10px 0 #FDD908;
 }
 .contest .textContainer {
-  padding: 40px;
-  width: 50%;
+  padding-left: 50px;
+  width: 75%;
+}
+.contest .imgContainer {
+  width: 25%;
 }
 
 .galleryHome {
@@ -305,26 +307,6 @@ footer p {
   margin: 50px 20px 20px 80px;
   resize: none;
   padding: 20px 0px 0px 20px;
-}
-.contactForm textarea::-webkit-input-placeholder {
-  color: #FFFFFF;
-  line-height: 1.2rem;
-}
-.contactForm textarea::-moz-placeholder {
-  color: #FFFFFF;
-  line-height: 1.2rem;
-}
-.contactForm textarea:-ms-input-placeholder {
-  color: #FFFFFF;
-  line-height: 1.2rem;
-}
-.contactForm textarea::-ms-input-placeholder {
-  color: #FFFFFF;
-  line-height: 1.2rem;
-}
-.contactForm textarea::placeholder {
-  color: #FFFFFF;
-  line-height: 1.2rem;
 }
 .contactForm button {
   margin: 20px 20px 20px 80px;
@@ -496,26 +478,24 @@ aside {
   margin-bottom: 20px;
 }
 
-@media (max-width: 1200px) {
-  .comments {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 600px 100px 100px;
-  }
-  .blogForm {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 100px 50px 0px 200px;
-  }
-}
 @media (max-width: 1085px) {
   .headerImgContainer {
     margin: 350px 200px 0px 0px;
   }
   .blogPosts {
     padding-top: 400px;
+  }
+  .comments {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 400px 100px 100px;
+  }
+  .blogForm {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 100px 50px 0px 200px;
   }
 }
 @media (max-width: 768px) {
@@ -536,6 +516,10 @@ aside {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .contest .imgContainer {
+    width: 75%;
+    padding-bottom: 50px;
   }
   .programs,
 .locations {
@@ -559,14 +543,34 @@ aside {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 200%;
-    padding-left: 0px;
-    padding-right: 500px;
   }
-  aside {
-    margin-bottom: 500px;
+  .galleryHome li {
+    width: 70%;
+  }
+  .comments {
+    margin-top: 800px;
+  }
+  .contactForm {
+    position: relative;
+    top: 200px;
+    right: 90px;
+    padding-right: 20px;
+    input-padding-right: 40px;
+  }
+  .contactForm textarea {
+    margin-right: 20px;
+    width: 60%;
+  }
+  .formContact button {
+    padding: 0px;
+    margin: 50px;
+    width: 60%;
   }
 }
+.contactMain section {
+  padding-left: 100px;
+}
+
 @media (max-width: 480px) {
   h1 {
     margin-top: 0;
@@ -582,13 +586,48 @@ aside {
             flex-direction: column;
   }
   .programsTextContainer, .locationsTextContainer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0;
+  }
+  .locationsTextContainer button {
+    margin-right: 80px;
+  }
+  .programsImgContainer, .locationsImgContainer {
+    width: 100%;
   }
   .mainMenu {
     display: none;
   }
-  aside {
-    margin-bottom: 500px;
+  .articleTextContainer {
+    padding: 10px;
+  }
+  .comments {
+    margin-top: 100px;
+  }
+  .manImgContainer, .womanImgContainer {
+    margin-right: 20px;
+    width: 100%;
+  }
+  .blogForm {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactForm {
+    margin: 100px 30px 300px 0px;
+    padding-right: 30px;
+  }
+  .contactForm input {
+    width: 80%;
+    padding: 0;
+  }
+  .contactForm textarea {
+    width: 80%;
+  }
+  .formContact {
+    margin-right: 30px;
   }
 }
 html {

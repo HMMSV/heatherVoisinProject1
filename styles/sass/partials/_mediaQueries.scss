@@ -1,24 +1,11 @@
 @use "./variables";
 
-@media (max-width: 1200px) {
 
-//BLOG STYLING
-
-	.comments, {
-		align-items: center;
-		margin: 600px 100px 100px;
-	}
-
-	.blogForm {
-		align-items: center;
-		margin: 100px 50px 0px 200px;
-	}
-}
-
+//DESKTOP STYLING
 
 @media (max-width: 1085px) {
 
-//HOME STYLING
+//HOME SECTION
 
 	.headerImgContainer {
 		margin: 350px 200px 0px 0px;
@@ -28,20 +15,27 @@
 		padding-top: 400px;
 	}
 
-}
 
-//BLOG STYLING
+//BLOG SECTION
+
+	.comments {
+		align-items: center;
+		margin: 400px 100px 100px;
+		}
+	
+	.blogForm {
+		align-items: center;
+		margin: 100px 50px 0px 200px;
+		}
+	}
 
 
 
-//CONTACT STYLING
-
-
-
+//TABLET STYLING
 
 @media (max-width: 768px) {
 
-//HOME STYLING
+//HOME SECTION
 
 .headerImgContainer {
 	display: none;
@@ -55,6 +49,11 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	.imgContainer {
+		width: 75%;
+		padding-bottom: 50px;
+	}
 }
 
 .programs,
@@ -68,22 +67,54 @@
 .galleryHome {
 	flex-direction: column;
 	align-items: center;
-	width: 200%;
-	padding-left: 0px;
-	padding-right: 500px;
 }
 
-//BLOG STYLING
+.galleryHome li {
+	width: 70%;
+}
 
-aside {
-	margin-bottom: 500px;
+//BLOG SECTION
+
+.comments {
+	margin-top: 800px;
+}
+
+//CONTACT SECTION
+
+.contactForm {
+	position: relative;
+	top: 200px;
+	right: 90px;
+	padding-right: 20px;
+
+	textarea {
+		margin-right: 20px;
+		width: 60%;
+	}
+
+	input: { padding-right: 40px;
+	}
+}
+
+.formContact button {
+	padding: 0px;
+	margin: 50px;
+	width: 60%;
 }
 
 }
+
+.contactMain section {
+	padding-left: 100px;
+}
+
+
+
+//MOBILE STYLING
 
 @media (max-width: 480px) {
 
-//HOME STYLING
+//HOME SECTION
 
 	h1 {
 		margin-top: 0;
@@ -99,17 +130,60 @@ aside {
 	}
 
 	.programsTextContainer, .locationsTextContainer {
+		align-items: center;
 		padding: 0;
+	}
+
+	.locationsTextContainer button {
+		margin-right: 80px;
+	}
+
+	.programsImgContainer, .locationsImgContainer {
+		width: 100%;
 	}
 	
 	.mainMenu {
 		display: none;
 	}
 
-//BLOG STYLING
+//BLOG SECTION
 
-aside {
-	margin-bottom: 500px;
+.articleTextContainer {
+	padding: 10px;
+}
+
+.comments {
+	margin-top: 100px;
+}
+
+.manImgContainer, .womanImgContainer {
+	margin-right: 20px;
+	width: 100%;
+}
+
+.blogForm {
+	align-items: center;
+}
+
+//CONTACT SECTION
+
+.contactForm {
+
+	margin: 100px 30px 300px 0px;
+	padding-right: 30px;
+
+	input {
+		width: 80%;
+		padding: 0;
+	}
+
+	textarea {
+		width: 80%;
+	}
+}
+
+.formContact {
+	margin-right: 30px;
 }
 
 }
