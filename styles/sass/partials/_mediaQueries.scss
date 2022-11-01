@@ -117,12 +117,13 @@
 //HOME SECTION
 
 	h1 {
-		margin-top: 0;
+		margin: 0;
 		padding-top: 0;
 		}
 
 	i.fa-bars {
 		visibility: visible;
+		cursor: pointer;
 		}
 	
 	.blogGallery {
@@ -148,6 +149,11 @@
 
 //BLOG SECTION
 
+.headerBlog h1 {
+	margin: 0;
+	padding: 100px 0px 0px 100px;
+}
+
 .articleTextContainer {
 	padding: 10px;
 }
@@ -166,6 +172,11 @@
 }
 
 //CONTACT SECTION
+
+.headerContact {
+	margin: 0;
+	padding-top: 100px;
+}
 
 .contactForm {
 
