@@ -55,7 +55,7 @@
                     <input type="email" placeholder="Email address" id="email" name="email" required="true">
                     <label for="message" class="sr-only"></label>
                     <textarea name="message" placeholder="Message" id="message" cols="70" rows="10" required="true"></textarea>
-                    <button type="submit">Submit</button>
+                    <button type="submit" onClick='return confirmSubmit()'>Submit</button>
                 </form>
             </div>
             </div>
@@ -65,5 +65,16 @@
     <footer>
         <p>Copyright &copy; 2019 HackerYou</p> 
     </footer>
+    <script>
+
+        function confirmSubmit() {
+            const agree = confirm("Are you sure you would like to submit?");
+            if (agree)
+            return true
+            else
+            return false;
+        };
+
+    </script>
 </body>
 </html>
